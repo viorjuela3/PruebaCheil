@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    font-size: 62.5%;
+  }  
+
+.footer{
+    background-color: var(--negro-fondo);
+    color: var(--blanco-tipografia);
+    padding: 30px;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .container-options{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        align-items: center; 
+    }
+}
+
+.wordM{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.wordM a img{
+    width: 40px;
+    height: 60px;
+}
+
+.optionsFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.optionLeft,
+.optionRight{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #76767676;
+    padding: 25px 0;
+}
+
+@media (min-width: 768px) {
+    .optionLeft,
+    .optionRight{
+    border-bottom: none;
+}
+}
+
+.options a{
+    text-decoration: none;
+    color: var(--blanco-tipografia);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 4rem;
+}
+
+/* Estilos menbresia */
+
+.memberships{
+    border-bottom: 1px solid #76767676;
+}
+
+@media (min-width: 768px) {
+    .memberships{
+        border-bottom: none;
+    }
+}
+
+.memberships-Insider figure img{ 
+    width: 60px;
+    height: 30px;
+}
+
+.memberships-Unlimited figure img{ 
+    width: 80px;
+    height: 35px;
+}
+
+.memberships-Insider, .memberships-Unlimited{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 30px 0;
+    
+}
+
+.descriptionMemberships p:nth-child(1){
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2rem; 
+}
+
+.descriptionMemberships p:nth-child(2){
+    color: #8F8E90 ;
+    font-size: 1.2rem;
+    line-height: 2rem; 
+}
+
+.footerLegal a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #8F8E90;
+    line-height: 2rem;
+}
+
+.socialNetworks-Footer{
+    padding: 20px 0;
+    border-bottom: 1px solid #76767676;
+}
+
+@media (min-width: 768px) {
+    .socialNetworks-Footer{
+        padding: 20px 0;
+        border-top: 1px solid #76767676;
+    }
+}
+
+.titleSocialNetworks-Footer{
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.iconSocialNetworks-Footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+    gap: 0.9rem;
+}
+
+.iconFooter{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.footerLegal{
+    padding: 20px 0;
+    color: #8F8E90;
+    font-size: 1.0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .footerLegal{
+        flex-direction: row;
+        padding: 20px 50px;
+        gap: 2rem;
+        justify-content: center;  
+    }
+}
+
+.footerLegal p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footerLegal p{
+        margin-top: 0;
+        padding: 0.4rem;
+        
+    }
+}
